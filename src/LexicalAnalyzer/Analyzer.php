@@ -10,7 +10,7 @@ namespace LexicalAnalyzer;
 class Analyzer {
 
     /**
-     * 
+     *
      * @const array
      */
     const OPTIONS = [];
@@ -28,14 +28,14 @@ class Analyzer {
     public function __construct(array $options = []) {
 
         $options = array_merge(self::OPTIONS, $options);
-
+            
         $this->automaton = isset($options["automaton"]) ?
                 $options["automaton"] : new FiniteAutomaton(
                 isset($options["alphabet"]) ? $options["alphabet"] : range('a', 'z'), 
                 isset($options["dictionary"]) ? $options["dictionary"] : new Dictionary()
         );
     }
-
+        
     /**
      * 
      * @param SlimSession\Helper $storage

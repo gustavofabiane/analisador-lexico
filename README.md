@@ -3,7 +3,7 @@ Trabalho de Linguagens Formais
 
 ## Para executar
 
-* Ter instalado o PHP 7.1
+* Instalar o PHP 7.1 -> https://www.apachefriends.org/download.html (instalação rápida com o XAMPP).
 * Instalar o Composer -> https://getcomposer.org/
     * Executar "composer install" na pasta do projeto
     * Executar "composer require" na pasta do projeto

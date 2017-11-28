@@ -13,6 +13,7 @@
             {% for state in automaton.states %}
                 <tr class="{{ state.getIndex() == automaton.lastState ? 'bg-info': null }}">
                     <td>
+                        {{ state.getIndex() == 0 ? '->' : '' }}
                         {{ state.isFinish() ? '*' : '' }}q
                         <sub>{{ state.getIndex() }}</sub>
                     </td>
